@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Red+Hat+Display:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: whitesmoke;
+  /* background: #F5F4EE; */
+}
+
+.space-mono {
+  font-family: "Space Mono", sans-serif;
+}
+.lato {
+  font-family: "Red Hat Display", sans-serif;
+}
+.gradient-night {
+  background: linear-gradient(to bottom left, #403f44, #1e1b32);
+}
+
+.gradient-green {
+  background: linear-gradient(to bottom left, #45c270, #21cdc3);
+}
+.smoke {
+  background: whitesmoke;
+}
+
+@layer components {
+  .btn-mode {
+    @apply text-sm text-gray-400 underline mt-5;
+  }
+  .btn-submit {
+    @apply text-sm text-gray-800 bg-green rounded-full p-2 w-full mt-4 font-bold border-2 transition-all duration-300;
+  }
+  .btn-submit-disable {
+    @apply text-sm text-gray-400 bg-none rounded-full p-2 w-full mt-4 font-bold border-2 border-gray-400 transition-all duration-300;
+  }
+}
+.shad {
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.shad1 {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.shad4 {
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 30px 90px; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 40px 0px,
+    rgba(0, 0, 0, 0.1) 0px 1px 2px 0px,
+    rgba(255, 255, 255, 0.03) 0px 0px 0px 0.4px inset;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+.nav {
+  /* background: rgba(74, 74, 74, 0.55); */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* border-radius: 10px; */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
