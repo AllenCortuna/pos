@@ -52,7 +52,7 @@ const TopContent = () => {
     <span className="flex flex-wrap flex-1 flex-row md:justify-start content-start grid-cols-4 gap-5 w-full h-auto">
       <Content
         name={"Total Goods"}
-        value={total.good?.toFixed(2)}
+        value={total.good ? total.good : "0"}
         border={"border-cyan-600"}
         unit={""}
       />
@@ -84,7 +84,7 @@ const TopContent = () => {
 
       <Content
         name={"Monthly Income"}
-        value={monthlyIncome?.toFixed(2)}
+        value={monthlyIncome ? monthlyIncome?.toFixed(2) : "0.00"}
         border={"border-amber-600"}
         unit={"php"}
       />
@@ -97,7 +97,7 @@ const TopContent = () => {
 
       <Content
         name={"Quarterly Income"}
-        value={quarterlyIncome?.toFixed(2)}
+        value={quarterlyIncome && quarterlyIncome?.toFixed(2)}
         border={"border-amber-400"}
         unit={"php"}
       />
